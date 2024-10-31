@@ -1,0 +1,13 @@
+logging:
+  file:
+    name: logs/my-log.log
+  logback:
+    rollingpolicy:
+      max-file-size: 20MB
+      max-history: 1
+  pattern:
+    console: '%red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger : %msg%n'
+
+server:
+  port: 8081

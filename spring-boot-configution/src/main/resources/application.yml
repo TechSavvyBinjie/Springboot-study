@@ -1,0 +1,71 @@
+server:
+  host: "localhost"
+  port: 8080
+  context-path: "/api"
+
+#family:
+#  familyName: "family"
+#  father: "Tom"
+#  mother: "Sam"
+#  child: "Kitter"
+#  age: 20
+
+person:
+  first-name: ${first-name:John}
+  last-name: ${last-name:Doe}
+  age: ${random.int(20,50)}
+  id: ${randm.uuid}
+  phone: ${phone.number:1234567890}
+
+student:
+  name: 张小飞
+  age: 20
+  happy: true
+  birth: 2004/01/01
+  map: {k1: v1,k2: v2}
+  list:
+    - code
+    - read
+    - music
+  dog:
+    name: 虎子
+    age: 11
+
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/spring-boot?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true
+#    username: root
+#    password: 1234
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+db:
+    url: jdbc:mysql://localhost:3306/spring-boot?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 2309932069@qq.com
+    password: haoegmhccywkdidj
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+jwt:
+  secret: nihao
+  expiration: 3600000
+
+custom:
+  qrcode:
+    content: "https://vue3-ts-docs-yangfans-projects-d569ecd6.vercel.app/"
+
+#custom:
+#  qrcode:
+#   content: "https://www.baidu.com"
+#  log:
+#   level: "INFO"
+#  backup:
+#   location: D:\360极速浏览器X下载\_temp_matlab_R2022b_win64\OneDrive\Desktop\backup.log
+

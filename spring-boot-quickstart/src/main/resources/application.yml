@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /yangfan
+
+spring:
+  banner:
+    location: banner .txt

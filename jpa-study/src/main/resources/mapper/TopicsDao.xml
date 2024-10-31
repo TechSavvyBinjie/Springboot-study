@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jpa_study.mapper.TopicsDao">
+  <resultMap id="BaseResultMap" type="com.jpa_study.entity.Topics">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="view_count" jdbcType="BIGINT" property="viewCount" />
+    <result column="followers_count" jdbcType="INTEGER" property="followersCount" />
+    <result column="is_following" jdbcType="BIT" property="isFollowing" />
+    <result column="banner" jdbcType="VARCHAR" property="banner" />
+    <result column="updated" jdbcType="TIMESTAMP" property="updated" />
+    <collection property="tagess" ofType="com.jpa_study.entity.Tags">
+          <id column="section_id" property="sectionId"/>
+          <result column="topic_id" property="topicId"/>
+          <result column="section_title" property="sectionTitle"/>
+    </collection>
+  </resultMap>
+<select id="findAll" resultMap="BaseResultMap">
+  select t.*,ta.*
+  FROM topics t
+  LEFT JOIN tags ta ON ta.topic_id=t.id
+  ORDER BY t.updated DESC
+</select>
+
+</mapper>

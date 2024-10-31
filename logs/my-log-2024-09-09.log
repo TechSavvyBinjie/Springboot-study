@@ -1,0 +1,199 @@
+2024-09-09 21:15:55.405 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Starting SpingBootThymeleafApplication using Java 20.0.2 with PID 20292 (D:\spring-boot-project\sping-boot-thymeleaf\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:15:55.406 DEBUG [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:15:55.407 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:15:55.447 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:15:55.455 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:15:56.142 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-09-09 21:15:56.150 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:15:56.153 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:15:56.153 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:15:56.204 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:15:56.204 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 748 ms
+2024-09-09 21:15:56.500 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-09-09 21:15:56.511 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:15:56.526 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-09-09 21:15:56.533 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Started SpingBootThymeleafApplication in 1.581 seconds (process running for 2.199)
+2024-09-09 21:17:06.152 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 21:17:06.152 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-09-09 21:17:06.154 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 2 ms
+2024-09-09 21:18:30.324 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Starting SpingBootThymeleafApplication using Java 20.0.2 with PID 8012 (D:\spring-boot-project\sping-boot-thymeleaf\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:18:30.325 DEBUG [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:18:30.326 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:18:30.361 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:18:30.361 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:18:31.110 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-09-09 21:18:31.122 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:18:31.126 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:18:31.126 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:18:31.166 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:18:31.166 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 804 ms
+2024-09-09 21:18:31.427 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-09-09 21:18:31.437 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:18:31.461 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-09-09 21:18:31.468 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Started SpingBootThymeleafApplication in 1.575 seconds (process running for 2.193)
+2024-09-09 21:18:56.115 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Starting SpingBootThymeleafApplication using Java 20.0.2 with PID 5352 (D:\spring-boot-project\sping-boot-thymeleaf\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:18:56.116 DEBUG [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:18:56.117 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:18:56.157 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:18:56.157 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:18:56.833 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-09-09 21:18:56.842 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:18:56.845 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:18:56.845 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:18:56.886 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:18:56.886 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 729 ms
+2024-09-09 21:18:57.144 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-09-09 21:18:57.155 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:18:57.170 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-09-09 21:18:57.176 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Started SpingBootThymeleafApplication in 1.486 seconds (process running for 2.073)
+2024-09-09 21:19:01.760 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 21:19:01.761 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-09-09 21:19:01.761 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 0 ms
+2024-09-09 21:20:24.582 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Starting SpingBootThymeleafApplication using Java 20.0.2 with PID 7728 (D:\spring-boot-project\sping-boot-thymeleaf\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:20:24.584 DEBUG [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:20:24.584 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:20:24.625 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:20:24.625 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:20:25.313 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-09-09 21:20:25.320 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:20:25.320 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:20:25.320 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:20:25.361 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:20:25.361 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 736 ms
+2024-09-09 21:20:25.618 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-09-09 21:20:25.631 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:20:25.648 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-09-09 21:20:25.654 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Started SpingBootThymeleafApplication in 1.52 seconds (process running for 2.135)
+2024-09-09 21:20:42.875 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Starting SpingBootThymeleafApplication using Java 20.0.2 with PID 23196 (D:\spring-boot-project\sping-boot-thymeleaf\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:20:42.876 DEBUG [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:20:42.877 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:20:42.919 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:20:42.919 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:20:43.640 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-09-09 21:20:43.651 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:20:43.655 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:20:43.655 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:20:43.711 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:20:43.711 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 791 ms
+2024-09-09 21:20:44.020 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-09-09 21:20:44.032 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:20:44.049 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-09-09 21:20:44.058 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Started SpingBootThymeleafApplication in 1.629 seconds (process running for 2.268)
+2024-09-09 21:20:54.205 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 21:20:54.205 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-09-09 21:20:54.206 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-09-09 21:21:54.747 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Starting SpingBootThymeleafApplication using Java 20.0.2 with PID 9996 (D:\spring-boot-project\sping-boot-thymeleaf\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:21:54.748 DEBUG [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:21:54.749 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:21:54.786 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:21:54.786 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:21:55.477 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-09-09 21:21:55.487 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:21:55.490 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:21:55.490 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:21:55.545 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:21:55.545 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+2024-09-09 21:21:55.835 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-09-09 21:21:55.848 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:21:55.863 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-09-09 21:21:55.870 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Started SpingBootThymeleafApplication in 1.552 seconds (process running for 2.193)
+2024-09-09 21:22:10.143 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 21:22:10.143 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-09-09 21:22:10.143 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 0 ms
+2024-09-09 21:22:21.329 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Starting SpingBootThymeleafApplication using Java 20.0.2 with PID 22792 (D:\spring-boot-project\sping-boot-thymeleaf\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:22:21.329 DEBUG [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:22:21.329 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:22:21.362 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:22:21.368 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:22:22.037 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-09-09 21:22:22.037 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:22:22.051 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:22:22.051 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:22:22.083 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:22:22.083 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 715 ms
+2024-09-09 21:22:22.411 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-09-09 21:22:22.425 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:22:22.446 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-09-09 21:22:22.455 INFO  [restartedMain] com.yangfan.spingbootthymeleaf.SpingBootThymeleafApplication : Started SpingBootThymeleafApplication in 1.63 seconds (process running for 2.246)
+2024-09-09 21:22:32.683 INFO  [restartedMain] com.yangfan.Application : Starting Application using Java 20.0.2 with PID 23376 (D:\spring-boot-project\spring-boot-logging\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:22:32.684 DEBUG [restartedMain] com.yangfan.Application : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:22:32.685 INFO  [restartedMain] com.yangfan.Application : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:22:32.725 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:22:32.725 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:22:33.389 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-09-09 21:22:33.398 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:22:33.401 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:22:33.401 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:22:33.440 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:22:33.440 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 714 ms
+2024-09-09 21:22:33.673 WARN  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : Unable to start LiveReload server
+2024-09-09 21:22:33.682 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 21:22:33.685 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-09-09 21:22:33.696 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-09 21:22:33.710 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-09-09 21:22:52.545 INFO  [restartedMain] com.yangfan.Application : Starting Application using Java 20.0.2 with PID 4576 (D:\spring-boot-project\spring-boot-logging\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:22:52.546 DEBUG [restartedMain] com.yangfan.Application : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:22:52.548 INFO  [restartedMain] com.yangfan.Application : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:22:52.587 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:22:52.587 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:22:53.275 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+2024-09-09 21:22:53.284 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8081"]
+2024-09-09 21:22:53.287 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:22:53.287 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:22:53.337 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:22:53.337 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 750 ms
+2024-09-09 21:22:53.580 WARN  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : Unable to start LiveReload server
+2024-09-09 21:22:53.590 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8081"]
+2024-09-09 21:22:53.613 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path '/'
+2024-09-09 21:22:53.620 INFO  [restartedMain] com.yangfan.Application : Started Application in 1.508 seconds (process running for 2.115)
+2024-09-09 21:23:01.427 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 21:23:01.428 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-09-09 21:23:01.428 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 0 ms
+2024-09-09 21:23:11.842 INFO  [http-nio-8081-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 21:23:11.842 INFO  [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-09-09 21:23:11.843 INFO  [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-09-09 21:23:11.866 DEBUG [http-nio-8081-exec-1] com.yangfan.controller.LogController : This is a DEBUG log
+2024-09-09 21:23:11.866 INFO  [http-nio-8081-exec-1] com.yangfan.controller.LogController : This is a INFO log
+2024-09-09 21:23:11.866 WARN  [http-nio-8081-exec-1] com.yangfan.controller.LogController : This is a WARN log
+2024-09-09 21:23:11.867 ERROR [http-nio-8081-exec-1] com.yangfan.controller.LogController : This is a ERROR log
+2024-09-09 21:23:47.407 DEBUG [http-nio-8081-exec-3] com.yangfan.controller.LogController : This is a DEBUG log
+2024-09-09 21:23:47.407 INFO  [http-nio-8081-exec-3] com.yangfan.controller.LogController : This is a INFO log
+2024-09-09 21:23:47.407 WARN  [http-nio-8081-exec-3] com.yangfan.controller.LogController : This is a WARN log
+2024-09-09 21:23:47.407 ERROR [http-nio-8081-exec-3] com.yangfan.controller.LogController : This is a ERROR log
+2024-09-09 21:24:36.187 INFO  [restartedMain] com.yangfan.Application : Starting Application using Java 20.0.2 with PID 23308 (D:\spring-boot-project\spring-boot-logging\target\classes started by Lenovo in D:\spring-boot-project)
+2024-09-09 21:24:36.189 DEBUG [restartedMain] com.yangfan.Application : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-09 21:24:36.189 INFO  [restartedMain] com.yangfan.Application : No active profile set, falling back to 1 default profile: "default"
+2024-09-09 21:24:36.226 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 21:24:36.226 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 21:24:36.903 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+2024-09-09 21:24:36.912 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8081"]
+2024-09-09 21:24:36.915 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-09 21:24:36.915 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09 21:24:36.958 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-09 21:24:36.958 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2024-09-09 21:24:37.196 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-09-09 21:24:37.206 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8081"]
+2024-09-09 21:24:37.221 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path '/'
+2024-09-09 21:24:37.227 INFO  [restartedMain] com.yangfan.Application : Started Application in 1.481 seconds (process running for 2.08)
+2024-09-09 21:24:46.574 INFO  [http-nio-8081-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 21:24:46.575 INFO  [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-09-09 21:24:46.576 INFO  [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-09-09 21:24:46.598 DEBUG [http-nio-8081-exec-1] com.yangfan.controller.LogController : This is a DEBUG log
+2024-09-09 21:24:46.598 INFO  [http-nio-8081-exec-1] com.yangfan.controller.LogController : This is a INFO log
+2024-09-09 21:24:46.598 WARN  [http-nio-8081-exec-1] com.yangfan.controller.LogController : This is a WARN log
+2024-09-09 21:24:46.598 ERROR [http-nio-8081-exec-1] com.yangfan.controller.LogController : This is a ERROR log

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jpa_study.mapper.TagsDao">
+  <resultMap id="BaseResultMap" type="com.jpa_study.entity.Tags">
+    <id column="section_id" jdbcType="BIGINT" property="sectionId" />
+    <result column="topic_id" jdbcType="BIGINT" property="topicId" />
+    <result column="section_title" jdbcType="VARCHAR" property="sectionTitle" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    section_id, topic_id, section_title
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tags
+    where section_id = #{sectionId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tags
+    where section_id = #{sectionId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="section_id" keyProperty="sectionId" parameterType="com.jpa_study.entity.Tags" useGeneratedKeys="true">
+    insert into tags (topic_id, section_title)
+    values (#{topicId,jdbcType=BIGINT}, #{sectionTitle,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="section_id" keyProperty="sectionId" parameterType="com.jpa_study.entity.Tags" useGeneratedKeys="true">
+    insert into tags
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="topicId != null">
+        topic_id,
+      </if>
+      <if test="sectionTitle != null">
+        section_title,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="topicId != null">
+        #{topicId,jdbcType=BIGINT},
+      </if>
+      <if test="sectionTitle != null">
+        #{sectionTitle,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jpa_study.entity.Tags">
+    update tags
+    <set>
+      <if test="topicId != null">
+        topic_id = #{topicId,jdbcType=BIGINT},
+      </if>
+      <if test="sectionTitle != null">
+        section_title = #{sectionTitle,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where section_id = #{sectionId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jpa_study.entity.Tags">
+    update tags
+    set topic_id = #{topicId,jdbcType=BIGINT},
+      section_title = #{sectionTitle,jdbcType=VARCHAR}
+    where section_id = #{sectionId,jdbcType=BIGINT}
+  </update>
+</mapper>

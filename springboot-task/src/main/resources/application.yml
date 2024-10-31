@@ -1,0 +1,23 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 916269658@qq.com
+    password: ubelbytgezjvbchd
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/spring-boot?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: never
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.springboottask.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
