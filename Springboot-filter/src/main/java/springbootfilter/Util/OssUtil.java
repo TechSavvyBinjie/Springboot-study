@@ -1,10 +1,11 @@
-package springbootfile.util;
+package springbootfilter.Util;
 
 import com.aliyun.oss.OSS;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-import springbootfile.Config.OssConfig;
+import springbootfilter.config.OssConfig;
+
 
 import java.io.InputStream;
 import java.util.UUID;
@@ -23,8 +24,8 @@ public class OssUtil {
             if (originalFilename == null) {
                 throw new IllegalArgumentException("");
             }
-            String fileName = UUID.randomUUID().toString() + "ok" ;
-
+//            String fileName = UUID.randomUUID().toString() + "_" + originalFilename;
+            String fileName =  "是否超过限定尺寸" + originalFilename;
             InputStream inputStream = file.getInputStream();
             ossClient.putObject(ossConfig.getBucket(), fileName,inputStream);
             return "http://"+ossConfig.getBucket()+"."+ossConfig.getEndpoint().replace("http://","")+"/"+fileName;

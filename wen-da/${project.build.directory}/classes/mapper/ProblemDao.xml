@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wenda.mapper.ProblemDao">
+  <resultMap id="BaseResultMap" type="wenda.entity.Problem">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+  </resultMap>
+  <resultMap id="problemMap" type="wenda.entity.Problem">
+    <id column="problem_id" jdbcType="INTEGER" property="id" />
+    <result column="problem_user_id" jdbcType="INTEGER" property="userId" />
+    <result column="problem_content" jdbcType="VARCHAR" property="content" />
+    <result column="answer_id" jdbcType="INTEGER" property="answerId" />
+    <result column="problem_title" jdbcType="INTEGER" property="title" />
+    <association property="user" javaType="wenda.entity.User">
+      <result column="user_username" property="username"/>
+      <result column="user_image" property="image"/>
+    </association>
+    <collection property="answers" ofType="wenda.entity.Answer">
+      <id column="answer_id" jdbcType="INTEGER" property="id" />
+      <result column="answer_user_id" jdbcType="INTEGER" property="answerUserId" />
+      <result column="answer_problem_id" jdbcType="INTEGER" property="answerProblemId" />
+      <result column="answer_content" jdbcType="VARCHAR" property="answerContent" />
+      <association property="user" javaType="wenda.entity.User">
+        <result column="answer_username" property="username"/>
+        <result column="answer_image" property="image"/>
+      </association>
+    </collection>
+  </resultMap>
+
+
+
+  <select id="findAll"  resultMap="problemMap">
+    SELECT
+      p.title As problem_title,
+      p.id AS problem_id,
+      p.user_id AS problem_user_id,
+      p.content AS problem_content,
+      a.id AS answer_id,
+      a.answer_user_id AS answer_user_id,
+      a.answer_problem_id AS answer_problem_id,
+      a.answer_content AS answer_content,
+      u.username AS user_username,
+      u.password AS user_password,
+      u.image AS user_image,
+      au.username AS answer_username,
+      au.password AS answer_password,
+      au.image AS answer_image
+    FROM
+      problem p
+        LEFT JOIN answer a ON p.id = a.answer_problem_id
+        LEFT JOIN user u ON p.user_id = u.id
+        LEFT JOIN user au ON a.answer_user_id = au.id
+    ORDER BY p.id DESC
+      LIMIT #{limit} OFFSET #{offset}
+  </select>
+  <sql id="Base_Column_List">
+    id, user_id, content, answer_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from problem
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from problem
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="wenda.entity.Problem" useGeneratedKeys="true">
+    insert into problem (user_id, content,title
+      )
+    values (#{userId,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="wenda.entity.Problem" useGeneratedKeys="true">
+    insert into problem
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="answerId != null">
+        answer_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="answerId != null">
+        #{answerId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="wenda.entity.Problem">
+    update problem
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="answerId != null">
+        answer_id = #{answerId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="wenda.entity.Problem">
+    update problem
+    set user_id = #{userId,jdbcType=INTEGER},
+      content = #{content,jdbcType=VARCHAR},
+      answer_id = #{answerId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPage" resultType="wenda.entity.Problem">
+    SELECT *
+    FROM problem
+    ORDER BY updated DESC
+      LIMIT #{limit} OFFSET #{offset}
+  </select>
+</mapper>

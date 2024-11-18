@@ -1,0 +1,67 @@
+spring:
+  data:
+    redis:
+      port: 6379
+      host: 127.0.01
+      database: 0 #???????
+      password:   #???
+      lettuce:
+        pool:
+          min-idle: 10 #??????????
+          max-idle: 20 #??????
+          max-active: 100 #?????????
+  datasource:
+      url: jdbc:mysql://127.0.0.1:3306/sys?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+yangfan:
+  sms:
+    ccp:
+      serverIp: app.cloopen.com
+      port: 8883
+      accountSId: 2c94811c9035ff9f0192adc3f82c7d50
+      accountToken: 6db11eb7fd0741159e6af3c81dde2ce8
+      appId: 2c94811c9035ff9f0192adc3f9a27d57
+      templated: 1
+
+
+# springdoc-openapi
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      # 扫描 controller 包的路径，自行修改
+      packages-to-scan: com.example.springbootredis.Controller
+
+# knife4j
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+  basic:
+    enable: true
+    username: admin
+    password: 123456
+
+# MP 配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰下划线转换
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印 SQL 语句，调试用
+  global-config:
+    db-config:
+      logic-delete-field: deleted # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值（默认为 1）
+      logic-not-delete-value: 0 # 逻辑未删除值（默认为 0）
+
+logging:
+  level:
+    com.baomidou.mybatisplus.samples: debug

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wenda.mapper.AnswerDao">
+  <resultMap id="BaseResultMap" type="wenda.entity.Answer">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="answer_user_id" jdbcType="INTEGER" property="answerUserId" />
+    <result column="answer_problem_id" jdbcType="INTEGER" property="answerProblemId" />
+    <result column="answer_content" jdbcType="VARCHAR" property="answerContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, answer_user_id, answer_problem_id, answer_content
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from answer
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from answer
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="wenda.entity.Answer" useGeneratedKeys="true">
+    insert into answer (answer_user_id, answer_problem_id, answer_content
+      )
+    values (#{answerUserId,jdbcType=INTEGER}, #{answerProblemId,jdbcType=INTEGER}, #{answerContent,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="wenda.entity.Answer" useGeneratedKeys="true">
+    insert into answer
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="answerUserId != null">
+        answer_user_id,
+      </if>
+      <if test="answerProblemId != null">
+        answer_problem_id,
+      </if>
+      <if test="answerContent != null">
+        answer_content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="answerUserId != null">
+        #{answerUserId,jdbcType=INTEGER},
+      </if>
+      <if test="answerProblemId != null">
+        #{answerProblemId,jdbcType=INTEGER},
+      </if>
+      <if test="answerContent != null">
+        #{answerContent,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="wenda.entity.Answer">
+    update answer
+    <set>
+      <if test="answerUserId != null">
+        answer_user_id = #{answerUserId,jdbcType=INTEGER},
+      </if>
+      <if test="answerProblemId != null">
+        answer_problem_id = #{answerProblemId,jdbcType=INTEGER},
+      </if>
+      <if test="answerContent != null">
+        answer_content = #{answerContent,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="wenda.entity.Answer">
+    update answer
+    set answer_user_id = #{answerUserId,jdbcType=INTEGER},
+      answer_problem_id = #{answerProblemId,jdbcType=INTEGER},
+      answer_content = #{answerContent,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,119 @@
+/* 基本表格样式 */
+table {
+    width: 100%; /* 表格宽度 */
+    border-collapse: collapse; /* 合并边框 */
+    margin: 20px 0; /* 外边距 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 字体 */
+}
+
+/* 表头样式 */
+thead {
+    background-color: #4CAF50; /* 深绿色背景 */
+    color: white; /* 文本颜色 */
+}
+
+/* 表头单元格样式 */
+thead th {
+    padding: 10px; /* 内边距 */
+    text-align: left; /* 文本对齐 */
+    font-weight: bold; /* 字体加粗 */
+}
+
+/* 表格行样式 */
+tbody tr {
+    background-color: #f9f9f9; /* 单元格背景颜色 */
+    border-bottom: 1px solid #ddd; /* 底部边框 */
+}
+
+/* 表格单元格样式 */
+tbody td {
+    padding: 10px; /* 内边距 */
+    text-align: left; /* 文本对齐 */
+    vertical-align: top; /* 垂直对齐 */
+}
+
+/* 悬停效果 */
+tbody tr:hover {
+    background-color: #f1f8e9; /* 悬停时的背景颜色 */
+}
+/* 基本重置 */
+body, h1, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* 整体页面样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+/* 标题样式 */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* 表单样式 */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+button {
+    padding: 10px 20px;
+    background: #5cb85c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+/* 任务列表样式 */
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* 内联表单样式 */
+li form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li form:last-child {
+    margin-right: 0;
+}

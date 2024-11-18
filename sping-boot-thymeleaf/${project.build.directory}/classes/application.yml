@@ -1,0 +1,11 @@
+logging:
+  level:
+    root: info
+    com.yangfan.spingbootthymeleaf: debug
+  file:
+    name: ./logs/my-log.log
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    cache: false
